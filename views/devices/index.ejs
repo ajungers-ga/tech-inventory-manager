@@ -1,0 +1,10 @@
+<h1>Your Devices</h1>
+<a href="/devices/new">Add New Device</a>
+<ul>
+  <% devices.forEach(device => { %>
+    <li>
+      <strong><%= device.itemName %> – <%= device.category %> (Qty: <%= device.quantity %>)
+    </li>
+  <% }) %>
+</ul>
+<a href="/auth/logout">Logout</a>
